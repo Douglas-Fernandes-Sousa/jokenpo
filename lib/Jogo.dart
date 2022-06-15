@@ -90,29 +90,32 @@ class _JogoState extends State<Jogo> {
               ),
             ),
           ),
-          Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-            GestureDetector(
-              onTap: () => _imageSelected('papel'),
-              child: Image.asset(
-                'images/papel.png',
-                height: 110,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              GestureDetector(
+                onTap: () => _imageSelected('papel'),
+                child: Image.asset(
+                  'images/papel.png',
+                  height: 110,
+                ),
               ),
-            ),
-            GestureDetector(
-              onTap: () => _imageSelected('pedra'),
-              child: Image.asset(
-                "images/pedra.png",
-                height: 110,
+              GestureDetector(
+                onTap: () => _imageSelected('pedra'),
+                child: Image.asset(
+                  "images/pedra.png",
+                  height: 110,
+                ),
               ),
-            ),
-            GestureDetector(
-              onTap: () => _imageSelected('tesoura'),
-              child: Image.asset(
-                "images/tesoura.png",
-                height: 110,
+              GestureDetector(
+                onTap: () => _imageSelected('tesoura'),
+                child: Image.asset(
+                  "images/tesoura.png",
+                  height: 110,
+                ),
               ),
-            ),
-          ]),
+            ],
+          ),
         ],
       ),
     );
